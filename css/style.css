@@ -1,0 +1,302 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+     background-color: hsl(185, 41%, 84%);
+     font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1, h2, h3, h4{
+     padding: 0;
+     margin: 0
+}
+
+.title, footer{
+     padding: 0;
+     text-align: center;
+     margin: 5% auto;
+     width: 10%;
+     color:hsl(186, 14%, 43%)
+}
+
+.mainSection{
+     width: 60%;
+     height: 300px;
+     margin: 0% auto;
+     display: flex;
+     justify-content: row;
+     border: 2px solid black;
+     border-radius: 5%;
+     padding: 2%;
+     background-color: white;
+}
+
+.sectionInputContainer{
+     width: 50%;
+     /* border: 2px solid black; */
+     border-radius: 5%;
+     padding: 2% 3%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     gap: 5%;
+}
+
+.billInput h4{
+     color:hsl(186, 14%, 43%);
+     font-size: 10px;
+     margin-bottom: 2%
+}
+
+.billInput input{
+     border: 1px solid black;
+     width :100%;
+     text-align: right;
+     color: hsl(186, 14%, 43%);
+}
+
+.billInput input::placeholder{
+     text-align: right;
+}
+
+.tipSelect{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 1%;
+
+}
+
+.tipSelect h4{
+     width: 100%;
+     color:hsl(186, 14%, 43%);
+     font-size: 10px;
+     margin-bottom: 2%
+}
+
+.tipSelect .tipValue{
+     width: 32%;
+     border: 1px solid black;
+     text-align: center;
+
+}
+
+.tipValue{
+     background-color: hsl(183, 100%, 15%);
+}
+
+.tipValue:hover{
+     background-color: hsl(172, 67%, 45%);
+}
+
+.tipValue h3{
+     font-size: 14px;
+     margin: 5%
+}
+
+.tipValue h3:hover{
+     font-size: 14px;
+     margin: 5%;
+     cursor: pointer;
+}
+
+.tipValue input{
+     text-align: center;
+}
+
+.tipValue input::placeholder{
+     text-align: center;
+     font-size: 14px;
+}
+
+.tipValue h3{
+     color:hsl(185, 41%, 84%);
+}
+
+.tipValue h3:hover{
+     color:hsl(183, 100%, 15%);
+     cursor: pointer;
+}
+
+.topTip{
+     margin-bottom: 2%
+}
+
+.tipValue input{
+     width: 100%
+}
+
+.peopleText{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+
+}
+.people h4{
+     color:hsl(186, 14%, 43%);
+     font-size: 10px;
+     margin: 2%
+}
+
+.people .hidden{
+     color:hsl(22, 72%, 42%);
+     font-size: 10px;
+     margin: 2%;
+     display: none;
+}
+
+.people input{
+     width: 100%;
+     text-align: right;
+}
+
+.people input::placeholder{
+     text-align: right;
+}
+
+/* .people input:{
+     text-align: right;
+} */
+
+/* Output section */
+
+.sectionOutputContainer{
+     width: 50%;
+     border: 2px solid black;
+     border-radius: 5%;
+     padding: 3% 5%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     background-color: hsl(183, 100%, 15%);
+}
+
+.outputValue{
+     display: flex;
+     flex-direction: column;
+     gap: 5%;
+}
+
+.outputValues h1{
+     color:hsl(172, 67%, 45%)
+}
+
+.outputValues h4{
+     color:hsl(185, 41%, 84%);
+     font-size: 10px;
+}
+
+.outputValues span{
+     color: hsl(186, 14%, 43%);
+     font-size: 8px;
+}
+
+.tipAmount{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-bottom: 3%
+}
+
+.totalAmount{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+
+.reset{
+     width: 80%;
+     margin: 0 auto;
+     border: 1px solid black;
+     text-align: center;
+     background-color: hsl(183, 97%, 12%);
+     color: hsl(183, 100%, 15%);
+     font-size: 14px;
+     padding: 3%;
+}
+
+.reset a{
+     color: hsl(183, 100%, 15%);
+     font-size: 14px;
+     text-decoration-line: none;
+}
+
+.reset:hover{
+     background-color: hsl(172, 67%, 45%);
+}
+
+@media (min-width: 300px) and (max-width: 785px){
+     .mainSection{
+          width: 60%;
+          height: 100%;
+          margin: 0% auto;
+          display: flex;
+          flex-direction: column;
+          border: 2px solid black;
+          border-radius: 5%;
+          padding: 2%;
+          background-color: white;
+     }
+
+     .sectionInputContainer{
+          width: 100%;
+     }
+
+     .tipSelect h3{
+          font-size: 16px;
+     }
+
+     .customTip2::placeholder{
+          font-size: 16px;
+     }
+
+     .sectionOutputContainer{
+          width: 100%;
+     }
+
+     .sectionOutputContainer h1{
+          font-size: 16px;
+     }
+}

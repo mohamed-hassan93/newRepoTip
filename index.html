@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Noto+Serif&family=Roboto:wght@100&family=Rubik:wght@300&family=Source+Sans+Pro:wght@400;700&family=Space+Mono:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css" media="all and (max-width: 1024px)">
+	</head>
+	<body>
+
+		
+		<section class = 'title'>	
+			<span>SPLITTER.app</SPAN>
+		</section>
+
+
+
+		<section class = 'mainSection'>
+			<section class = 'sectionInputContainer'>
+				<section class = 'billInput'>
+					<h4>Bill</h4>
+					<input id = "billValue" type="text" placeholder="$0.00">
+				</section>
+
+				<section class='tipSelect'>
+					<h4>Select Tip %</h4>
+					<div class = 'tipValue topTip'><h3 id = 'fivePercent'>5%</h3></div>
+					<div class = 'tipValue topTip tenPercent'><h3 id = 'tenPercent'>10%</h3></div>
+					<div class = 'tipValue topTip fifteenPercent'><h3 id = 'fifteenPercent'>15%</h3></div>
+					<div class = 'tipValue twentyFivePercent'><h3 id = 'twentyFivePercent'>25%</h3></div>
+					<div class = 'tipValue fiftyPercent'><h3 id = 'fiftyPercent'>50%</h3></div>
+					<div class = 'tipValue customTip'><input type="text" class = 'customTip2' name="" id="customTipVal" placeholder="Custom"></div>
+				</section>
+
+				<section class = 'people'>
+					<section class = 'peopleText'>
+						<h4>Number of People</h4>
+						<h4 class = 'hidden'>Can't be Zero!</h4>	
+					</section>
+					<input type="text" id ='peopleInput' placeholder="0">
+				</section>
+			</section>
+
+			<section class = 'sectionOutputContainer'>
+				<section class= 'outputValues'>
+					<section class='tipAmount'>
+						<div>
+							<h4>Tip Amount</h4>
+							<span>/ person</span>
+						</div>
+						<h1 id = 'tip' >$0.00</h1>
+					</section>
+					<section class='totalAmount'>
+						<div>
+							<h4>Total</h4>
+							<span>/ person</span>
+						</div>
+						<h1 id = 'total'>$0.00</h1>
+					</section>
+				</section>
+				<h2 class = 'reset'><a href ='file:///Users/mohamed/Desktop/WEBDEV/Projects/Template/index.html'>RESET</a></h2>
+			</section>
+		</section>
+
+		<footer>
+			<span>mxhamedcodes</SPAN>
+		</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
